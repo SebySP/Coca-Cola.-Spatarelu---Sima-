@@ -1,0 +1,9 @@
+#! /usr/bin/env pythonimport rospy
+# Importă biblioteca ROS [cite: 175]
+rospy.init_node("Friends")
+rate = rospy.Rate(2)
+# Inițiază nodul cu numele "Friends" [cite: 176]
+# Setează frecvența la 2Hz (2 ori pe secundă) [cite: 177]
+while not rospy.is_shutdown():
+print("How you doooin?")
+rate.sleep()
